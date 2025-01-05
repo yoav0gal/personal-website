@@ -47,13 +47,13 @@ export function Navigation() {
                 {item}
               </motion.a>
             ))}
-            <Link href={"./CV.pdf"} target="_blank" rel="noopener noreferrer">
-              <Button
-                variant="outline"
-                className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
-              >
-                Download CV
-              </Button>
+            <Link
+              href={"./CV.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-lg border p-2 bg-white text-sm px-3"
+            >
+              Download CV
             </Link>
           </div>
 
