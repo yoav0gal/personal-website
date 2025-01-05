@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,13 +47,14 @@ export function Navigation() {
                 {item}
               </motion.a>
             ))}
-            <Button
-              variant="outline"
-              className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
-              onClick={() => window.open("/CV.pdf")}
-            >
-              Download CV
-            </Button>
+            <Link href={"./CV.pdf"} target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outline"
+                className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white"
+              >
+                Download CV
+              </Button>
+            </Link>
           </div>
 
           <Button
